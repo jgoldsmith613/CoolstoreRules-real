@@ -1,3 +1,5 @@
+package com.redhat.coolstore
+
 ruleflow-group "pricing-rules"
 dialect "mvel"
 no-loop true
