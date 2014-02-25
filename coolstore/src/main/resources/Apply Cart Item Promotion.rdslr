@@ -7,7 +7,7 @@ rule "Apply Cart Item Promotion"
 	ruleflow-group "promo-cart-rules"
 	dialect "mvel"
 	when
-		$sci : ShoppingCartItem( $itemId : itemId)
+		$sci : ShoppingCartItem( $itemId : itemId != null )
 		Promotion( itemId == $itemId && $pctOff : percentOff) from entry-point "Promo Stream"
 	then
 		$sci.setPromoSavings( =$sci.price*$pctOff );
