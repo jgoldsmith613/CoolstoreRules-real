@@ -8,6 +8,6 @@ rule "Total Shopping Cart"
 	when
 		$sc : ShoppingCart( )
 	then
-		$sc.setCartTotal( =$sc.cartItemTotal + $sc.shippingTotal );
+		$sc.setCartTotal( $sc.cartItemTotal + $sc.shippingTotal );
 		update( $sc );
 end
