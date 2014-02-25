@@ -1,17 +1,16 @@
 package com.redhat.coolstore
 
-ruleflow-group "pricing-rules"
-dialect "mvel"
-no-loop true
-
 rule "Total Shopping Cart Items"
-when
+    ruleflow-group "pricing-rules"
+    dialect "mvel"
+    no-loop true
+    when
 	$sc : ShoppingCart( )
 	$cartItemTotal : Double( ) from accumulate ( $sci : ShoppingCartItem( shoppingCart == $sc ),
 		 sum($sci.price * $sci.quantity))
 	$cartItemPromoSavings : Double( ) from accumulate ( $sci : ShoppingCartItem( shoppingCart == $sc ),
 		 sum($sci.promoSavings * $sci.quantity))
-then
+    then
 	$sc.setCartItemTotal( $cartItemTotal );
 	$sc.setCartItemPromoSavings( $cartItemPromoSavings * -1 );
 	update( $sc );
