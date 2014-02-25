@@ -3,6 +3,8 @@ import com.redhat.coolstore.ShoppingCartItem;
 import com.redhat.coolstore.Promotion;
 
 rule "Apply Cart Item Promotions"
+	no-loop true
+	ruleflow-group "promo-cart-rules"
 	dialect "mvel"
 	when
 		$sci : ShoppingCartItem( $itemId : itemId)
