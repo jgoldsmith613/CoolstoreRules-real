@@ -8,33 +8,59 @@ public class ShoppingCartItem  implements java.io.Serializable {
 
 static final long serialVersionUID = 1L;
     
-    @org.kie.api.definition.type.Label(value = "Price")
+    @org.kie.api.definition.type.Label(value = "Item ID")
     @org.kie.api.definition.type.Position(value = 0)
+    private java.lang.String itemId;
+    
+    @org.kie.api.definition.type.Label(value = "Name")
+    @org.kie.api.definition.type.Position(value = 1)
+    private java.lang.String name;
+    
+    @org.kie.api.definition.type.Label(value = "Price")
+    @org.kie.api.definition.type.Position(value = 2)
     private java.lang.Double price;
     
-    @org.kie.api.definition.type.Label(value = "Product")
-    @org.kie.api.definition.type.Position(value = 3)
-    private com.redhat.coolstore.Product product;
-    
     @org.kie.api.definition.type.Label(value = "Promotional Savings")
-    @org.kie.api.definition.type.Position(value = 2)
+    @org.kie.api.definition.type.Position(value = 4)
     private java.lang.Double promoSavings;
     
     @org.kie.api.definition.type.Label(value = "Quantity")
-    @org.kie.api.definition.type.Position(value = 1)
+    @org.kie.api.definition.type.Position(value = 3)
     private java.lang.Integer quantity;
+    
+    @org.kie.api.definition.type.Label(value = "Shopping Cart")
+    @org.kie.api.definition.type.Position(value = 5)
+    private com.redhat.coolstore.ShoppingCart shoppingCart;
 
     public ShoppingCartItem() {
     }
 
-    public ShoppingCartItem(java.lang.Double price, java.lang.Integer quantity, java.lang.Double promoSavings, com.redhat.coolstore.Product product) {
+    public ShoppingCartItem(java.lang.String itemId, java.lang.String name, java.lang.Double price, java.lang.Integer quantity, java.lang.Double promoSavings, com.redhat.coolstore.ShoppingCart shoppingCart) {
+        this.itemId = itemId;
+        this.name = name;
         this.price = price;
         this.quantity = quantity;
         this.promoSavings = promoSavings;
-        this.product = product;
+        this.shoppingCart = shoppingCart;
     }
 
 
+    
+    public java.lang.String getItemId() {
+        return this.itemId;
+    }
+
+    public void setItemId(  java.lang.String itemId ) {
+        this.itemId = itemId;
+    }
+    
+    public java.lang.String getName() {
+        return this.name;
+    }
+
+    public void setName(  java.lang.String name ) {
+        this.name = name;
+    }
     
     public java.lang.Double getPrice() {
         return this.price;
@@ -42,14 +68,6 @@ static final long serialVersionUID = 1L;
 
     public void setPrice(  java.lang.Double price ) {
         this.price = price;
-    }
-    
-    public com.redhat.coolstore.Product getProduct() {
-        return this.product;
-    }
-
-    public void setProduct(  com.redhat.coolstore.Product product ) {
-        this.product = product;
     }
     
     public java.lang.Double getPromoSavings() {
@@ -66,5 +84,13 @@ static final long serialVersionUID = 1L;
 
     public void setQuantity(  java.lang.Integer quantity ) {
         this.quantity = quantity;
+    }
+    
+    public com.redhat.coolstore.ShoppingCart getShoppingCart() {
+        return this.shoppingCart;
+    }
+
+    public void setShoppingCart(  com.redhat.coolstore.ShoppingCart shoppingCart ) {
+        this.shoppingCart = shoppingCart;
     }
 }
