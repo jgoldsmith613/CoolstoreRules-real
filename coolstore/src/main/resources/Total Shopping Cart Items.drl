@@ -1,5 +1,7 @@
 package com.redhat.coolstore
 
+import com.redhat.coolstore.ShoppingCart
+
 ruleflow-group "pricing-rules"
 dialect "mvel"
 no-loop true
