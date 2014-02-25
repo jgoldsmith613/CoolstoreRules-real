@@ -5,7 +5,7 @@ no-loop true
 package com.redhat.coolstore
 
 when
-	$sc : ShoppingCart( )
+	$sc : com.redhat.coolstore.ShoppingCart( )
 	$cartItemTotal : Double( ) from accumulate ( $sci : ShoppingCartItem( shoppingCart == $sc ),
 		 sum($sci.price * $sci.quantity))
 	$cartItemPromoSavings : Double( ) from accumulate ( $sci : ShoppingCartItem( shoppingCart == $sc ),
