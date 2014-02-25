@@ -1,9 +1,10 @@
+package com.redhat.coolstore
+
 ruleflow-group "pricing-rules"
 dialect "mvel"
 no-loop true
 
-package com.redhat.coolstore
-
+rule
 when
 	$sc : com.redhat.coolstore.ShoppingCart( )
 	$cartItemTotal : Double( ) from accumulate ( $sci : ShoppingCartItem( shoppingCart == $sc ),
