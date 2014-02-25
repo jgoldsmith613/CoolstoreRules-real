@@ -1,8 +1,8 @@
-package com.redhat.coolstore
-
 ruleflow-group "pricing-rules"
 dialect "mvel"
 no-loop true
+
+package com.redhat.coolstore
 
 when
 	$sc : ShoppingCart( )
