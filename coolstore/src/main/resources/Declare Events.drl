@@ -1,3 +1,0 @@
-declare PromoEvent
-   @role (event) 
-end
