@@ -11,12 +11,17 @@ static final long serialVersionUID = 1L;
     @org.kie.api.definition.type.Label(value = "Item ID")
     @org.kie.api.definition.type.Position(value = 0)
     private java.lang.String itemId;
+    
+    @org.kie.api.definition.type.Label(value = "Percentage Off")
+    @org.kie.api.definition.type.Position(value = 1)
+    private java.lang.Double percentOff;
 
     public EventPromo() {
     }
 
-    public EventPromo(java.lang.String itemId) {
+    public EventPromo(java.lang.String itemId, java.lang.Double percentOff) {
         this.itemId = itemId;
+        this.percentOff = percentOff;
     }
 
 
@@ -27,5 +32,13 @@ static final long serialVersionUID = 1L;
 
     public void setItemId(  java.lang.String itemId ) {
         this.itemId = itemId;
+    }
+    
+    public java.lang.Double getPercentOff() {
+        return this.percentOff;
+    }
+
+    public void setPercentOff(  java.lang.Double percentOff ) {
+        this.percentOff = percentOff;
     }
 }
