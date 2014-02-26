@@ -1,6 +1,6 @@
 import java.lang.Number;
 import com.redhat.coolstore.ShoppingCartItem;
-import com.redhat.coolstore.Promotion;
+import com.redhat.coolstore.PromoEvent;
 
 rule "Apply Cart Item Promotions"
 	no-loop true
