@@ -23,8 +23,6 @@ static final long serialVersionUID = 1L;
         this.itemId = itemId;
         this.percentOff = percentOff;
     }
-
-
     
     public java.lang.String getItemId() {
         return this.itemId;
