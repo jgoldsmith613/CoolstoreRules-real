@@ -1,5 +1,3 @@
-package com.redhat.coolstore
-
 declare PromoEvent
    @role (event) 
 end
