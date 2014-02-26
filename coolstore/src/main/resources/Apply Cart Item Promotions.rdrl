@@ -8,7 +8,7 @@ rule "Apply Cart Item Promotions"
 	dialect "mvel"
 	when
 		$sci : ShoppingCartItem( $itemId : itemId)
-		Promotion( itemId == $itemId && $pctOff : percentOff) from entry-point "Promo Stream"
+		PromoEvent( itemId == $itemId && $pctOff : percentOff) from entry-point "null"
 	then
 		$sci.setPromoSavings( $sci.price * $pctOff );
 		update( $sci );
