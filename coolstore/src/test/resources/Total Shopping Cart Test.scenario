@@ -16,7 +16,7 @@
         </field-data>
         <field-data>
           <name>shippingTotal</name>
-          <value>0</value>
+          <value>0.0</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
