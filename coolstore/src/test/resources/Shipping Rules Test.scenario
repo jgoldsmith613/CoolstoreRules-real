@@ -1,12 +1,75 @@
 <scenario>
-  <name>Shipping Rules Test</name>
+  <name>Shipping Rules Test.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>shipping-rules</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc1</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc2</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc3</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc4</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc5</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc6</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc7</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc8</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData/>
+      <name>$sc9</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
   <imports>
-    <imports/>
+    <imports>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>com.redhat.coolstore.ShoppingCart</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+    </imports>
   </imports>
 </scenario>
