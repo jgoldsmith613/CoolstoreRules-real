@@ -61,7 +61,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>cartTotal</fieldName>
-          <expected>27.99</expected>
+          <expected>27.990000000000002</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
