@@ -18,6 +18,60 @@
       <name>$sc</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>ShoppingCartItem</type>
+      <fieldData>
+        <field-data>
+          <name>price</name>
+          <value>10.99</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>quantity</name>
+          <value>1</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>shoppingCart</name>
+          <value>=$sc</value>
+          <nature>2</nature>
+        </field-data>
+        <field-data>
+          <name>promoSavings</name>
+          <value></value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>$sci1</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>ShoppingCartItem</type>
+      <fieldData>
+        <field-data>
+          <name>price</name>
+          <value>5.00</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>quantity</name>
+          <value>2</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>shoppingCart</name>
+          <value>=$sc</value>
+          <nature>2</nature>
+        </field-data>
+        <field-data>
+          <name>promoSavings</name>
+          <value>1.50</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>$sci2</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace/>
   </fixtures>
   <rules/>
