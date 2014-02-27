@@ -46,8 +46,27 @@
       <expectedFire>true</expectedFire>
     </expect-rule>
     <expect-fact>
-      <fieldValues/>
+      <fieldValues>
+        <expect-field>
+          <fieldName>cartTotal</fieldName>
+          <expected>0</expected>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
       <name>$sc1</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>cartTotal</fieldName>
+          <expected>27.99</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$sc2</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
