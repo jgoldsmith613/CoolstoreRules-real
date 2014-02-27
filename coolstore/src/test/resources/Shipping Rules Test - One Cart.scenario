@@ -53,6 +53,22 @@
       <isModify>true</isModify>
     </fact-data>
     <execution-trace/>
+    <expect-rule>
+      <ruleName>Row 1 Shipping Rules</ruleName>
+      <expectedCount>1</expectedCount>
+    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>shippingTotal</fieldName>
+          <expected>2.99</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$sc</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
   <rules/>
   <inclusive>false</inclusive>
