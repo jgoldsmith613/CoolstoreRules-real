@@ -163,7 +163,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
-          <expected>10.99</expected>
+          <expected>8.99</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
