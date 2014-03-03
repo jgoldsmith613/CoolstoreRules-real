@@ -4,6 +4,7 @@ rule "Total Shopping Cart Items"
     ruleflow-group "pricing-rules"
     dialect "mvel"
     no-loop true
+    enabled false
     when
 	$sc : ShoppingCart( )
 	$cartItemTotal : Double( ) from accumulate ( $sci : ShoppingCartItem( shoppingCart == $sc ),
