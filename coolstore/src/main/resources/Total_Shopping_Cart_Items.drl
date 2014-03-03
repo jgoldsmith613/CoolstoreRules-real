@@ -2,7 +2,6 @@ package com.redhat.coolstore
 
 rule "Total Shopping Cart Items"
     ruleflow-group "pricing-rules"
-    dialect "mvel"
     no-loop true
     when
 	$sc : ShoppingCart( )
