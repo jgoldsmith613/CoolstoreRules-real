@@ -19,6 +19,11 @@
           <value>0.0</value>
           <nature>1</nature>
         </field-data>
+        <field-data>
+          <name>cartItemPromoSavings</name>
+          <value></value>
+          <nature>1</nature>
+        </field-data>
       </fieldData>
       <name>$sc1</name>
       <isModify>false</isModify>
@@ -34,6 +39,11 @@
         <field-data>
           <name>shippingTotal</name>
           <value>2.99</value>
+          <nature>1</nature>
+        </field-data>
+        <field-data>
+          <name>cartItemPromoSavings</name>
+          <value>3.0</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -53,6 +63,12 @@
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
+        <expect-field>
+          <fieldName>cartItemPromoSavings</fieldName>
+          <expected>-0.0</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
       </fieldValues>
       <name>$sc1</name>
       <anonymous>false</anonymous>
@@ -62,6 +78,12 @@
         <expect-field>
           <fieldName>cartTotal</fieldName>
           <expected>27.990000000000002</expected>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+        <expect-field>
+          <fieldName>cartItemPromoSavings</fieldName>
+          <expected>-3.0</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
