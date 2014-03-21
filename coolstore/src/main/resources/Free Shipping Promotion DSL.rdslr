@@ -5,7 +5,7 @@ rule "Free Shipping Promotion DSL"
 	ruleflow-group "promo-rules"
 	dialect "mvel"
 	when
-		When customer spends $75
+		If customer spends $75
 	then
 		Apply Free Shipping
 end
