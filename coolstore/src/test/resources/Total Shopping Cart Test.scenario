@@ -65,9 +65,9 @@
         </expect-field>
         <expect-field>
           <fieldName>cartItemPromoSavings</fieldName>
-          <expected>-0.0</expected>
+          <expected>0.0</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc1</name>
@@ -85,7 +85,7 @@
           <fieldName>cartItemPromoSavings</fieldName>
           <expected>-3.0</expected>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc2</name>
