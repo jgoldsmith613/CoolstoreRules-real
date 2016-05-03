@@ -7,19 +7,21 @@
   <version>2.0.0</version>
   <packaging>kjar</packaging>
   <name>coolstore</name>
-  <repositories>
-    <repository>
-      <id>guvnor-m2-repo</id>
-      <name>Guvnor M2 Repo</name>
-      <url>http://localhost:8080/business-central/maven2/</url>
-    </repository>
-  </repositories>
+
+<dependencies>
+<!-- add this dependency if there are Model Classes present (created by Data Modeler in the business-central) -->
+        <dependency>
+            <groupId>org.kie</groupId>
+            <artifactId>kie-api</artifactId>
+            <version>6.3.0.Final-redhat-9</version>
+        </dependency>
+</dependencies>
   <build>
     <plugins>
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.3.0.Final-redhat-4</version>
+        <version>6.3.0.Final-redhat-9</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
